@@ -9,24 +9,21 @@ class PostsData extends Component {
         id: 1,
         author: {
           name: 'Rafael',
-          avatar: '//avatar image here',
+          avatar: 'https://imgur.com/wCCue8m.jpeg',
         },
         date: 'September 19 2019',
-        content: '//comment here',
+        content: 'What is Lorem Ipsum?',
         comments: [
           {
             id: 1,
             author: {
               name: 'Marcel',
-              avatar: '//avatar image here',
+              avatar: 'https://imgur.com/Qg2JHk9.png',
             },
-            content: '//comment answer here'
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
           }
         ],
       },
-      {
-        // next id here
-      }
     ]
   }
 

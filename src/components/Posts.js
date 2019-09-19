@@ -2,10 +2,10 @@ import React from 'react';
 
 function Post({ author, date }) {
   return (
-    <div className="post">
+    <div className="post-user">
       <img className="userAvatar" src={author.avatar} />
-      <div className="postInfo">
-        <span>{author.name}</span>
+      <div className="userInfo">
+        <strong><span>{author.name}</span></strong>
         <span>{date}</span>
       </div>
     </div>
@@ -14,28 +14,30 @@ function Post({ author, date }) {
 
 function Comments({ comments }) {
   return (
-    <div className="comments">
+    <div className="post-comments">
       <div className="divider" />
       {comments.map(comment => (
-        <div key={comment.id} className="comment">
-          <img className="userAvatar" src={comment.author.avatar} />
-          <span>{comment.author.name}</span>
-          <span>{comment.content}</span>
+        <div key={comment.id} className="replyComment">
+          <img className="replyAvatar" src={comment.author.avatar} />
+          <p>
+            <strong><span>{comment.author.name}</span></strong>
+            {comment.content}
+          </p>
         </div>
       ))}
     </div>
   );
 }
 
-function PostingPost({ author, date, comments, content}) {
+function PostedPost({ author, date, comments, content}) {
   return (
-    <div className="postingPost">
+    <div className="post">
       <Post author={author} date={date} />
-      <p className="content">{content}</p>
+      <p className="post-content">{content}</p>
       <Comments comments={comments} />
     </div>
   )
 }
 
 
-export default PostingPost;
+export default PostedPost;
