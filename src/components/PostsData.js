@@ -24,6 +24,44 @@ class PostsData extends Component {
           }
         ],
       },
+      {
+        id: 2,
+        author: {
+          name: 'Felipe',
+          avatar: 'https://imgur.com/GfhGMXu.jpeg',
+        },
+        date: 'September 20 2019',
+        content: 'What is ReactJS?',
+        comments: [
+          {
+            id: 1,
+            author: {
+              name: 'Marcel',
+              avatar: 'https://imgur.com/Qg2JHk9.png',
+            },
+            content: "ReactJS basically is an open-source JavaScript library which is used for building user interfaces specifically for single page applications. It's used for handling view layer for web and mobile apps. React also allows us to create reusable UI components."
+          }
+        ],
+      },
+      {
+        id: 2,
+        author: {
+          name: 'Cristiane',
+          avatar: 'https://imgur.com/QwtqBgY.jpeg',
+        },
+        date: 'September 20 2019',
+        content: 'What is React-native?',
+        comments: [
+          {
+            id: 1,
+            author: {
+              name: 'Rodrigo',
+              avatar: 'https://imgur.com/MeojNUL.jpeg',
+            },
+            content: "React Native is a JavaScript framework for writing real, natively rendering mobile applications for iOS and Android. React Native also exposes JavaScript interfaces for platform APIs, so your React Native apps can access platform features like the phone camera, or the user's location."
+          }
+        ],
+      }
     ]
   }
 
